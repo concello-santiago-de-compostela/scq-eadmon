@@ -1,0 +1,11 @@
+# Configura as ligazóns simbólicas para o comando javaws
+
+update-alternatives --install "/usr/bin/javaws" "javaws" "/opt/java/bin/javaws" 1
+update-alternatives --set javaws /opt/java/bin/javaws
+
+# Engade aplicativo predeterminado para ficheiros e protocolo JNLP
+
+cat <<EOF >>/usr/share/applications/mate-mimeapps.list
+application/x-java-jnlp-file=java.desktop
+x-scheme-handler/jnlp=java.desktop
+EOF

@@ -1,0 +1,6 @@
+Package: scq-eadmon
+Version: 1.0
+Maintainer: Rafael Rodríguez <rrodriguezg@santiagodecompostela.gal>
+Depends:
+Architecture: amd64
+Description: Implementación de cambios en sistema Ubuntu 18.04 MATE para uso en administración electrónica. 
